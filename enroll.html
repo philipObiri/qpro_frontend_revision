@@ -8,9 +8,9 @@
     <meta content="" name="description">
     <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicons/favicon.ico" rel="icon">
-  <link href="assets/img/favicons/favicon-32x32.png" rel="apple-touch-icon">
+    <!-- Favicons -->
+    <link href="assets/img/favicons/favicon.ico" rel="icon">
+    <link href="assets/img/favicons/favicon-32x32.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,6 +31,7 @@
     <link href="assets/css/main.css" rel="stylesheet">
 
 </head>
+
 <body>
     <!-- ======= Header ======= -->
     <header id="header" class="header d-flex align-items-center">
@@ -96,19 +97,24 @@
                         <img src="assets/img/banner.png" alt="" class="img-fluid" id="program-img" height="100px">
                     </div>
                     <div class="col-lg-10 m-auto">
-                        <h4 class="text-center my-3">APPLY NOW</h4>
+                        <h4 class="text-center my-3">ENROLLMENT FORM</h4>
                         <form action="" method="post" role="form" class="php-email-form">
+                            <h5>COURSE</h5>
+                            <hr>
                             <div class="my-3">
-                                <h5>Programmes</h5>
+
                                 <em>
                                     Please review available qualification programmes and select the programme that best
                                     suits you professional interests.
                                 </em>
                             </div>
+
+
                             <div class="my-3">
+                                <label for="">Select programme</label>
                                 <select class="form-select form-control dropup" aria-label="Default select example"
                                     required>
-                                    <option selected>Select Program </option>
+                                    <!-- <option selected>Select Programme </option> -->
                                     <option value="1">Professional Development Certificate in Business Administration.
                                     </option>
                                     <option value="2">Professional Development Certificate in Communication and
@@ -129,9 +135,12 @@
                                     <option value="11">Professional Development Certificate in Marketing, Sales and
                                         Advertising </option>
                                 </select>
-                            </div>
+                            </div><br>
 
 
+
+                            <h5>PERSONAL DETAILS</h5>
+                            <hr>
                             <div class="my-3">
                                 <select class="form-select form-control dropup" aria-label="Default select example"
                                     required>
@@ -153,6 +162,42 @@
                                 </div>
                             </div>
 
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="other_names" id="other_names"
+                                    placeholder="Other Names (As In ID/Passport)" required>
+                            </div>
+
+
+                            <div class="row gy-4">
+                                <div class="col-lg-6 form-group">
+                                    <label for="date_of_birth">Date Of Birth (DD/MM/YYY)</label>
+                                <input type="date" class="form-control" name="date_of_birth" id="date_of_birth"
+                                    placeholder="Date Of Birth (DD/MM/YYY)" required>
+                                </div>
+                                <div class="col-lg-6 form-group">
+                                    <label for="date_of_birth">Country Of Birth</label>
+                                    <input type="text" class="form-control" name="country" id="country"
+                                        placeholder="Country" required>
+                                </div>
+                            </div>
+
+                            <div class="row gy-4">
+                                <div class="col-lg-6 form-group">
+                                    <label for="gender">Gender</label>
+                                    <select class="form-select form-control dropup" aria-label="Default select example"
+                                    required name="gender">
+                                    <option selected>Male</option>
+                                    <option value="3">Female</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-lg-6 form-group">
+                                    <label for="age">Age</label>
+                                    <input type="number" class="form-control" name="age" id="age"
+                                        placeholder="Country" required>
+                                </div>
+                            </div>
+
 
                             <div class="row gy-4">
                                 <div class="col-lg-6 form-group">
@@ -171,11 +216,39 @@
                                     placeholder="Mobile Number" required>
                             </div>
 
-                            <div class="my-3">
+                            <div class="row gy-4">
+                                <div class="col-lg-6 form-group">
+                                    <input type="text" class="form-control" name="residential_address"
+                                        id="residential_address" placeholder="Residential Address" required>
+                                </div>
+                                <div class="col-lg-6 form-group">
+                                    <input type="text" class="form-control" name="country" id="country"
+                                        placeholder="City" required>
+                                </div>
+                            </div>
+
+
+                           
+
+
+
+                            <div class="form-group">
+                                <label for="date_of_birth">Date Of Birth (DD/MM/YYY)</label>
+                                <input type="date" class="form-control" name="date_of_birth" id="date_of_birth"
+                                    placeholder="Date Of Birth (DD/MM/YYY)" required>
+                            </div>
+
+
+
+
+                            <!-- <div class="my-3">
                                 <div class="loading">Loading</div>
                                 <div class="error-message"></div>
                                 <div class="sent-message">Your message has been sent. Thank you!</div>
-                            </div>
+                            </div> -->
+
+
+
                             <div class="text-center"><button type="submit">Submit <i class="fa fa-paper-plane"
                                         aria-hidden="true"></i></button></div>
                         </form>
@@ -184,7 +257,8 @@
                 </div>
 
             </div>
-        </section><!-- End Contact Section -->
+        </section>
+        <!-- End Contact Section -->
 
     </main><!-- End #main -->
 
