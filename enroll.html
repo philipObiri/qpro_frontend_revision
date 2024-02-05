@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Apply Now | Qualification Programmes </title>
+    <title>Enrollment Form| Qualification Programmes </title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -26,13 +26,13 @@
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
     <!-- Template Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet">
 
 </head>
 
 <body>
+
     <!-- ======= Header ======= -->
     <header id="header" class="header d-flex align-items-center">
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
@@ -97,24 +97,21 @@
                         <img src="assets/img/banner.png" alt="" class="img-fluid" id="program-img" height="100px">
                     </div>
                     <div class="col-lg-10 m-auto">
-                        <h4 class="text-center my-3">STUDENT APPLICATION FORM</h4>
+                        <h4 class="text-center my-3">PROGRAMME ENROLLMENT FORM </h4>
                         <form action="" method="post" role="form" class="php-email-form">
-                            <h5>COURSE</h5>
-                            <hr>
                             <div class="my-3">
-
+                                <h5>Course</h5>
                                 <em>
                                     Please review available qualification programmes and select the programme that best
                                     suits you professional interests.
                                 </em>
+                                <hr>
                             </div>
 
-
                             <div class="my-3">
-                                <label for="">Select programme</label>
-                                <select class="form-select form-control dropup" aria-label="Default select example"
-                                    required>
-                                    <!-- <option selected>Select Programme </option> -->
+                                <label for="programme">What programme are you applying for:</label>
+                                <select class=" form-select" id="programme" name="programme" required>
+                                    <option value="" selected disabled>--------</option>
                                     <option value="1">Professional Development Certificate in Business Administration.
                                     </option>
                                     <option value="2">Professional Development Certificate in Communication and
@@ -135,124 +132,156 @@
                                     <option value="11">Professional Development Certificate in Marketing, Sales and
                                         Advertising </option>
                                 </select>
-                            </div><br>
+                            </div>
 
-
-
-                            <h5>PERSONAL DETAILS</h5>
-                            <hr>
                             <div class="my-3">
-                                <select class="form-select form-control dropup" aria-label="Default select example"
-                                    required>
-                                    <option selected>Mr.</option>
-                                    <option value="3">Ms.</option>
-                                    <option value="2">Mrs.</option>
-                                    <option value="5">PhD</option>
+                                <h5>Personal Details</h5>
+                                <hr>
+                            </div>
+
+                            <!-- Title -->
+                            <div class="my-3">
+                                <label for="title">Title :</label>
+                                <select class="form-select " id="title" name="title" required>
+                                    <option value="" selected disabled>--------</option>
+                                    <option value="1">Mr.</option>
+                                    <option value="2">Ms.</option>
+                                    <option value="3">Mrs.</option>
+                                    <option value="4">PhD</option>
                                 </select>
                             </div>
 
+
+                            <!-- First And Last Name -->
                             <div class="row gy-4">
-                                <div class="col-lg-6 form-group">
+                                <div class="col-lg-4 form-group">
+                                    <label for="firstname">First Name</label>
                                     <input type="text" name="firstname" class="form-control" id="firstname"
-                                        placeholder="First Name" required>
+                                        placeholder="NANA" required>
                                 </div>
-                                <div class="col-lg-6 form-group">
-                                    <input type="email" class="form-control" name="lastname" id="lastname"
-                                        placeholder="Last Name" required>
+                                <div class="col-lg-4 form-group">
+                                    <label for="middlename">Middle Name (If Any)</label>
+                                    <input type="text" class="form-control" name="middlename" id="middlename"
+                                        placeholder="KWAME">
+                                </div>
+                                <div class="col-lg-4 form-group">
+                                    <label for="lastname">Last Name</label>
+                                    <input type="text" class="form-control" name="lastname" id="lastname"
+                                        placeholder="ATOAPEM" required>
                                 </div>
                             </div>
 
+                            <!-- How would you like your name to appear on the certificate-->
                             <div class="form-group">
-                                <input type="text" class="form-control" name="other_names" id="other_names"
-                                    placeholder="Other Names (As In ID/Passport)" required>
+                                <label for="nameoncert">How would you like your name to appear on the
+                                    certificate</label>
+                                <input type="text" class="form-control" name="nameoncert" id="nameoncert"
+                                    placeholder="NANA KWAME ATOAPEM" required>
                             </div>
 
-
-                            <div class="row gy-4">
-                                <div class="col-lg-6 form-group">
-                                    <label for="date_of_birth">Date Of Birth (DD/MM/YYY)</label>
-                                <input type="date" class="form-control" name="date_of_birth" id="date_of_birth"
-                                    placeholder="Date Of Birth (DD/MM/YYY)" required>
-                                </div>
-                                <div class="col-lg-6 form-group">
-                                    <label for="date_of_birth">Country Of Birth</label>
-                                    <input type="text" class="form-control" name="country" id="country"
-                                        placeholder="Country" required>
-                                </div>
-                            </div>
-
-                            <div class="row gy-4">
-                                <div class="col-lg-6 form-group">
-                                    <label for="gender">Gender</label>
-                                    <select class="form-select form-control dropup" aria-label="Default select example"
-                                    required name="gender">
-                                    <option selected>Male</option>
-                                    <option value="3">Female</option>
-                                    </select>
-                                </div>
-
-                                <div class="col-lg-6 form-group">
-                                    <label for="age">Age</label>
-                                    <input type="number" class="form-control" name="age" id="age"
-                                        placeholder="Country" required>
-                                </div>
-                            </div>
-
-
-                            <div class="row gy-4">
-                                <div class="col-lg-6 form-group">
-                                    <input type="text" name="name" class="form-control" id="name"
-                                        placeholder="Email Address" required>
-                                </div>
-                                <div class="col-lg-6 form-group">
-                                    <input type="email" class="form-control" name="email" id="email"
-                                        placeholder="Confirm Email Address" required>
-                                </div>
-                            </div>
-
-
+                            <!-- Email -->
                             <div class="form-group">
-                                <input type="text" class="form-control" name="mobile" id="mobile"
+                                <label for="email">Email Address</label>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="email"
+                                    required>
+                            </div>
+
+
+                            <!--Nationality-->
+                            <div class="form-group">
+                                <label for="countrySelect">Nationality:</label>
+                                <select class="form-control" id="countrySelect">
+                                    <!-- Options will be dynamically populated using JavaScript -->
+                                </select>
+                            </div>
+
+                            <!-- Date Of Birth-->
+                            <div class="form-group">
+                                <label for="dob">Date Of Birth</label>
+                                <input type="date" class="form-control" name="dob" id="dob" placeholder="Date Of Birth"
+                                    required>
+                            </div>
+
+                            <!-- Phone-->
+                            <div class="form-group">
+                                <label for="phone">Mobile Number</label>
+                                <input type="text" class="form-control" name="phone" id="phone"
                                     placeholder="Mobile Number" required>
                             </div>
 
-                            <div class="row gy-4">
-                                <div class="col-lg-6 form-group">
-                                    <input type="text" class="form-control" name="residential_address"
-                                        id="residential_address" placeholder="Residential Address" required>
-                                </div>
-                                <div class="col-lg-6 form-group">
-                                    <input type="text" class="form-control" name="country" id="country"
-                                        placeholder="City" required>
-                                </div>
-                            </div>
-
-
-                           
-
-
-
+                            <!-- Address -->
                             <div class="form-group">
-                                <label for="date_of_birth">Date Of Birth (DD/MM/YYY)</label>
-                                <input type="date" class="form-control" name="date_of_birth" id="date_of_birth"
-                                    placeholder="Date Of Birth (DD/MM/YYY)" required>
+                                <label for="address">Residential Address</label>
+                                <input type="text" class="form-control" name="address" id="address"
+                                    placeholder="Residential Address" required>
                             </div>
 
+                            <div class="my-1">
+                                <h5>Academic History</h5>
+                                <hr>
+                            </div>
 
+                            <!-- Last School Attended -->
+                            <div class="form-group">
+                                <label for="lastschoolattended">Name Of Last School Attended</label>
+                                <input type="text" class="form-control" name="lastschoolattended"
+                                    id="lastschoolattended" placeholder="Last School Attended" required>
+                            </div>
 
+                            <!-- Date Of Completion-->
+                            <div class="form-group">
+                                <label for="datecompleted">Date of Completion</label>
+                                <input type="date" class="form-control" name="datecompleted" id="datecompleted"
+                                    placeholder="Date Completed" required>
+                            </div>
 
-                            <!-- <div class="my-3">
-                                <div class="loading">Loading</div>
-                                <div class="error-message"></div>
-                                <div class="sent-message">Your message has been sent. Thank you!</div>
-                            </div> -->
+                            <!-- Highest Academic Qualification -->
+                            <div class="my-3">
+                                <label for="highestqualification">What your highest qualification:</label>
+                                <select id="highestqualification" name="highestqualification" class="form-select">
+                                    <option value="" selected disabled>--------</option>
+                                    <option value="jhs">Junior High School</option>
+                                    <option value="shs">Senior High School</option>
+                                    <option value="diploma">Diploma</option>
+                                    <option value="hnd">HND</option>
+                                    <option value="associate">Associate </option>
+                                    <option value="bachelors">Bachelor's Degree</option>
+                                    <option value="masters">Master's Degree</option>
+                                    <option value="doctorate">Doctorate</option>
+                                </select>
+                            </div>
 
+                            <div class="my-1">
+                                <h5>Relevant Work Experience</h5>
+                                <hr>
+                            </div>
 
+                            <!-- Current Employer -->
+                            <div class="form-group">
+                                <label for="currentemployer">Name of Current Employer</label>
+                                <input type="text" class="form-control" name="currentemployer" id="currentemployer"
+                                    placeholder="Current Employer" required>
+                            </div>
 
-                            <div class="text-center"><button type="submit">Submit <i class="fa fa-paper-plane"
+                            <!-- Current Position -->
+                            <div class="form-group">
+                                <label for="currentposition">What is your Current Job (Position)</label>
+                                <input type="text" class="form-control" name="currentposition" id="currentposition"
+                                    placeholder="Current Position" required>
+                            </div>
+
+                            <!-- Job Description -->
+                            <div class="form-group">
+                                <label for="jobdescription">Job Description</label>
+                                <input type="text" class="form-control" name="jobdescription" id="jobdescription"
+                                    placeholder="Job Description" required>
+                            </div>
+
+                            <div class="text-center"><button type="submit">Enroll <i class="fa fa-paper-plane"
                                         aria-hidden="true"></i></button></div>
                         </form>
-                    </div><!-- End Contact Form -->
+                    </div>
+                    <!-- End Contact Form -->
 
                 </div>
 
@@ -260,7 +289,8 @@
         </section>
         <!-- End Contact Section -->
 
-    </main><!-- End #main -->
+    </main>
+    <!-- End #main -->
 
 
     <!-- ======= Footer ======= -->
@@ -311,7 +341,6 @@
                     <img src="assets/img/logos/Logos-04.png " alt="white logo of accra business school"
                         id="footer_logo">
 
-
                 </div>
             </div>
         </div>
@@ -336,17 +365,50 @@
 
     <div id="preloader"></div>
 
+    <script>
+        // Function to fetch countries and populate the dropdown alphabetically
+        function fetchCountries() {
+            var apiUrl = 'https://restcountries.com/v3.1/all';
+
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    var selectElement = document.getElementById('countrySelect');
+
+                    // Sort country names alphabetically
+                    var sortedCountries = data.map(country => country.name.common).sort();
+
+                    // Populate the dropdown with sorted country names
+                    sortedCountries.forEach(country => {
+                        var option = document.createElement('option');
+                        option.value = country;
+                        option.text = country;
+                        selectElement.add(option);
+                    });
+                })
+                .catch(error => console.error('Error fetching countries:', error));
+        }
+
+        // Initialize the dropdown
+        fetchCountries();
+    </script>
+
+
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script> -->
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
+
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+
+
 
 </body>
 

@@ -29,6 +29,9 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <!---JQUERY FOR DOWNLOADS-->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 
 <body>
@@ -41,32 +44,33 @@
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       <nav id="navbar" class="navbar">
+
         <ul>
-          <li><a href="index.html ">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li class="dropdown"><a href="#" class="active"><span>Programs</span> <i
+          <li class="dropdown active"><a href="#"><span>Programs</span> <i
                 class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="business_administration.html">Professional Development Certificate<br> in Business
+              <li><a href="business_administration.html"> Business
                   Administration</a></li>
-              <li><a href="communication_and_journalism.html">Professional Development Certificate<br> in Communication
+              <li><a href="communication_and_journalism.html "> Communication
                   and Journalism </a></li>
-              <li><a href="logistics_and_transport.html">Professional Development Certificate<br> in Supply Chain,
+              <li><a href="logistics_and_transport.html"> Supply Chain,
                   Logistics and Transport.</a></li>
-              <li><a href="operations_management.html">Professional Development Certificate<br> in Operations
+              <li><a href="operations_management.html"> Operations
                   Management</a></li>
-              <li><a href="cybersecurity.html">Professional Development Certificate<br> in Cybersecurity</a></li>
-              <li><a href="finance.html">Professional Development Certificate<br> in Finance</a></li>
-              <li><a href="human_resource_management.html">Professional Development Certificate<br> in Human Resource
+              <li><a href="cybersecurity.html"> Cybersecurity</a></li>
+              <li><a href="finance.html">Finance</a></li>
+              <li><a href="human_resource_management.html">Human Resource
                   Management</a></li>
-              <li><a href="digital_marketing_and_social_media_strategy.html">Professional Development Certificate<br> in
+              <li><a href="digital_marketing_and_social_media_strategy.html">
                   Digital Marketing and Social Media
                   Strategy</a></li>
-              <li><a href="project_management.html">Professional Development Certificate<br> in Project Management</a>
+              <li><a href="project_management.html"> Project Management</a>
               </li>
-              <li><a href="procurement_and_contract_management.html">Professional Development Certificate<br> in
+              <li><a href="procurement_and_contract_management.html">
                   Procurement and Contract Management</a></li>
-              <li><a href="sales_marketing_and_advertising.html">Professional Development Certificate<br> in Sales,
+              <li><a href="sales_marketing_and_advertising.html">Sales,
                   Marketing, and Advertising</a></li>
             </ul>
           </li>
@@ -74,209 +78,190 @@
           <li><a href="apply.html">Apply</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
+
       </nav>
     </div>
   </header><!-- End Header -->
 
   <main id="main">
 
-    <!-- ======= Breadcrumbs ======= -->
-    <div class="breadcrumbs d-flex align-items-center" style="background-image: url(''); ">
-      <!-- <div class=" position-relative d-flex flex-column align-items-center" data-aos="fade">
-      </div> -->
-    </div>
-    <!-- End Breadcrumbs -->
+
 
     <!-- ======= Course  Details Section ======= -->
     <section id="project-details" class="project-details">
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="position-relative h-100 img-fuid ">
-          <img src="assets/img/programs/finance.jpg" alt="" class="img-fluid" id="program-img">
+          <img src="assets/img/courses/finance.jpg" class="img-fluid">
         </div>
 
         <div class="row justify-content-between gy-4 mt-4">
           <div class="col-lg-8">
-            <h1>Professional Development Certificate in Finance </h1>
-            <div class="portfolio-description">
+            <button class="accordion"><strong>Overview</strong></button>
+            <div class="panel">
+
+              <p>The Eight-Week Professional Development Certificate in Finance is an intensive full-time program
+                designed to provide a comprehensive understanding of finance. It focuses on vital areas such as
+                financial analysis, management, corporate finance, investments, and financial markets, which are
+                crucial for a thriving career in the financial industry.</p>
             </div>
+
+            <button class="accordion"><strong>Aims And Objectives</strong></button>
+            <div class="panel">
+              <div>
+                <strong>Aim:</strong>
+                <ul>
+                  <li>To equip students with a profound knowledge of finance principles and their application in
+                    various business contexts</li>
+
+                </ul>
+              </div><br>
+
+              <div>
+                <strong>Objectives:</strong>
+                <ul>
+                  <li>Develop a solid understanding of finance principles and their practical business applications.
+                  </li>
+                  <li>Gain expertise in key finance areas including financial analysis, management, corporate
+                    finance, and investments.</li>
+                  <li>Enhance the ability to make strategic financial decisions in the business sector.</li>
+                </ul>
+              </div><br>
+            </div>
+
+            <button class="accordion"><strong>Learning Outcomes</strong></button>
+            <div class="panel">
+              <p>Upon completing the program, students will::</p>
+              <ul>
+                <li>Possess proficiency in analyzing financial statements for informed decision-making.</li>
+                <li>Have an in-depth understanding of financial management and corporate finance.</li>
+                <li>Acquire skills in investment analysis and comprehension of financial market dynamics.</li>
+                <li>Develop strategies for effective financial risk management.</li>
+
+              </ul>
+            </div>
+
+            <button class="accordion"><strong>Programme Structure</strong></button>
+            <div class="panel">
+              <h4>Course Outline</h4>
+              <div>
+                <strong>Week 1: Introduction to Finance</strong>
+                <ul>
+                  <li>Fundamental principles of financial management, financial markets, and instruments.</li>
+
+                </ul>
+              </div><br>
+
+              <div>
+                <strong>Week 2 - Week 3: Foundations of Financial Analysis</strong>
+                <ul>
+                  <li>Methods in financial statement analysis, forecasting, and portfolio management basics</li>
+
+                </ul>
+              </div><br>
+              <div>
+                <strong>Week 4: Financial Management in Organizations</strong>
+                <ul>
+                  <li> Core concepts in organizational financial management, budgeting, and capital structure.</li>
+                </ul>
+              </div><br>
+
+
+              <div>
+                <strong>Week 5 - Week 6: Corporate Finance: Principles and Practices</strong>
+                <ul>
+                  <li>Comprehensive study of corporate finance, including capital budgeting, financing decisions,
+                    and valuation</li>
+
+                </ul>
+              </div><br>
+
+              <div>
+                <strong>Week 7: Introduction to Investments and Financial Markets</strong>
+                <ul>
+                  <li>Basic investment theories, asset pricing models, and an overview of global financial markets.
+                  </li>
+
+                </ul>
+              </div><br>
+
+
+              <div>
+                <strong>Week 8: Foundations of Financial Markets and Instruments</strong>
+                <ul>
+                  <li>Understanding various financial instruments and the structure of financial markets.
+                  </li>
+                </ul>
+              </div><br>
+
+
+              <div>
+                <strong>Assessment Methods:</strong>
+                <ul>
+                  <li>Continuous assessments through quizzes, assignments, and case studies.</li>
+                  <li>Practical financial projects to apply learned concepts.</li>
+                  <li>A capstone project that integrates knowledge from all course modules.</li>
+                  <li>A final examination to assess overall understanding.</li>
+                </ul>
+              </div><br>
+
+              <div>
+                <strong>Learning Methods:</strong>
+                <ul>
+                  <li>Engaging online lectures that are compact and interactive.</li>
+                  <li>Case-based learning for applying theory to real-world financial scenarios.</li>
+                  <li>Collaborative projects, peer reviews, and access to digital resources.</li>
+                  <li>Utilization of financial simulation tools for hands-on learning.</li>
+                </ul>
+              </div>
+
+            </div>
+
+            <button class="accordion"><strong>Fees And Start Date</strong></button>
+            <div class="panel">
+              <p>
+              <h5><em>START DATE: 9th March 2024</em></h5>
+              <h5><em>FEES: 2500 GHS</em></h5>
+              </p>
+            </div>
+
 
             <div id="app_buttons">
               <a href="apply.html" id="apply_btn">
                 Apply Now
               </a>
 
-              <button id="download_btn" download="!#">
-                Download Brochure</button>
+              <!-- Button trigger modal -->
+              <button type="button" id="download_btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Download Brochure
+              </button>
             </div>
           </div>
 
-          <div class="col-lg-8">
-            <!-- ======= Tabs Section ======= -->
-            <div class="tabs-container">
-              <ul class="tab-nav">
-                <li><a href="#tab1" class="active" data-tab="tab1">Overview</a></li>
-                <li><a href="#tab2" data-tab="tab2">Aims And Objectives</a></li>
-                <li><a href="#tab3" data-tab="tab3">Learning Outcomes</a></li>
-                <li><a href="#tab4" data-tab="tab4">Programme Structure</a></li>
-                <li><a href="#tab5" data-tab="tab5">Fees And Start Date</a></li>
-              </ul>
-
-              <div class="tab-content">
-                <div class="tab-pane active" id="tab1">
-                  <p>The Eight-Week Professional Development Certificate in Finance is an intensive full-time program
-                    designed to provide a comprehensive understanding of finance. It focuses on vital areas such as
-                    financial analysis, management, corporate finance, investments, and financial markets, which are
-                    crucial for a thriving career in the financial industry.</p>
-                </div>
-
-                <div class="tab-pane" id="tab2">
-                  <div>
-                    <strong>Aim:</strong>
-                    <ul>
-                      <li>To equip students with a profound knowledge of finance principles and their application in
-                        various business contexts</li>
-
-                    </ul>
-                  </div><br>
-
-                  <div>
-                    <strong>Objectives:</strong>
-                    <ul>
-                      <li>Develop a solid understanding of finance principles and their practical business applications.
-                      </li>
-                      <li>Gain expertise in key finance areas including financial analysis, management, corporate
-                        finance, and investments.</li>
-                      <li>Enhance the ability to make strategic financial decisions in the business sector.</li>
-                    </ul>
-                  </div><br>
-                </div>
-                <div class="tab-pane" id="tab3">
-                  <p>Upon completing the program, students will::</p>
-                  <ul>
-                    <li>Possess proficiency in analyzing financial statements for informed decision-making.</li>
-                    <li>Have an in-depth understanding of financial management and corporate finance.</li>
-                    <li>Acquire skills in investment analysis and comprehension of financial market dynamics.</li>
-                    <li>Develop strategies for effective financial risk management.</li>
-
-                  </ul>
-                </div>
-                <div class="tab-pane" id="tab4">
-                  <h4>Course Outline</h4>
-                  <div>
-                    <strong>Week 1: Introduction to Finance</strong>
-                    <ul>
-                      <li>Fundamental principles of financial management, financial markets, and instruments.</li>
-
-                    </ul>
-                  </div><br>
-
-                  <div>
-                    <strong>Week 2 - Week 3: Foundations of Financial Analysis</strong>
-                    <ul>
-                      <li>Methods in financial statement analysis, forecasting, and portfolio management basics</li>
-
-                    </ul>
-                  </div><br>
-                  <div>
-                    <strong>Week 4: Financial Management in Organizations</strong>
-                    <ul>
-                      <li> Core concepts in organizational financial management, budgeting, and capital structure.</li>
-                    </ul>
-                  </div><br>
-
-
-                  <div>
-                    <strong>Week 5 - Week 6: Corporate Finance: Principles and Practices</strong>
-                    <ul>
-                      <li>Comprehensive study of corporate finance, including capital budgeting, financing decisions,
-                        and valuation</li>
-
-                    </ul>
-                  </div><br>
-
-                  <div>
-                    <strong>Week 7: Introduction to Investments and Financial Markets</strong>
-                    <ul>
-                      <li>Basic investment theories, asset pricing models, and an overview of global financial markets.
-                      </li>
-
-                    </ul>
-                  </div><br>
-
-
-                  <div>
-                    <strong>Week 8: Foundations of Financial Markets and Instruments</strong>
-                    <ul>
-                      <li>Understanding various financial instruments and the structure of financial markets.
-                      </li>
-                    </ul>
-                  </div><br>
-
-
-                  <div>
-                    <strong>Assessment Methods:</strong>
-                    <ul>
-                      <li>Continuous assessments through quizzes, assignments, and case studies.</li>
-                      <li>Practical financial projects to apply learned concepts.</li>
-                      <li>A capstone project that integrates knowledge from all course modules.</li>
-                      <li>A final examination to assess overall understanding.</li>
-                    </ul>
-                  </div><br>
-
-                  <div>
-                    <strong>Learning Methods:</strong>
-                    <ul>
-                      <li>Engaging online lectures that are compact and interactive.</li>
-                      <li>Case-based learning for applying theory to real-world financial scenarios.</li>
-                      <li>Collaborative projects, peer reviews, and access to digital resources.</li>
-                      <li>Utilization of financial simulation tools for hands-on learning.</li>
-                    </ul>
-                  </div>
-
-                </div>
-                <!-- New tab content added below -->
-                <div class="tab-pane" id="tab5">
-                  <h5><em>START DATE: 9th March 2024</em></h5>
-                  <h5><em>FEES: 2500 GHS</em></h5>
-
-                  <div>
-                    <p>
-                      This program is ideal for individuals seeking an accelerated path to gain comprehensive knowledge
-                      and skills in finance, preparing them for advanced roles in the dynamic financial sector.
-                    </p>
-                  </div><br>
-                </div>
-              </div> <!-- .tab-content -->
-            </div> <!-- .tabs-container -->
-
-            <!-- Tabs Section -->
-          </div>
           <div class="col-lg-3">
             <div class="portfolio-info">
-              <h3>Other Programs..</h3>
+              <h3>Professional Development Certificate In..</h3>
               <ul>
-                <li><a href="business_administration.html">Professional Development Certificate<br> in Business
+                <li><a href="business_administration.html">Business
                     Administration</a></li>
-                <li><a href="communication_and_journalism.html">Professional Development Certificate<br> in
+                <li><a href="communication_and_journalism.html">
                     Communication
                     and Journalism </a></li>
-                <li><a href="logistics_and_transport.html">Professional Development Certificate<br> in Supply Chain,
+                <li><a href="logistics_and_transport.html">Supply Chain,
                     Logistics and Transport.</a></li>
-                <li><a href="operations_management.html">Professional Development Certificate<br> in Operations
+                <li><a href="operations_management.html"> Operations
                     Management</a></li>
-                <li><a href="cybersecurity.html">Professional Development Certificate<br> in Cybersecurity</a></li>
-                <li><a href="human_resource_management.html">Professional Development Certificate<br> in Human Resource
+                <li><a href="cybersecurity.html"> Cybersecurity</a></li>
+                <li><a href="finance.html"> Finance</a></li>
+                <li><a href="human_resource_management.html"> Human Resource
                     Management</a></li>
-                <li><a href="digital_marketing_and_social_media_strategy.html">Professional Development Certificate<br>
-                    in
-                    Digital Marketing and Social Media
-                    Strategy</a></li>
-                <li><a href="project_management.html">Professional Development Certificate<br> in Project Management</a>
+                <li><a href="digital_marketing_and_social_media_strategy.html">
+                    Digital Marketing </a></li>
+                <li><a href="project_management.html"> Project Management</a>
                 </li>
-                <li><a href="procurement_and_contract_management.html">Professional Development Certificate<br> in
+                <li><a href="procurement_and_contract_management.html">
                     Procurement and Contract Management</a></li>
-                <li><a href="sales_marketing_and_advertising.html">Professional Development Certificate<br> in Sales,
+                <li><a href="sales_marketing_and_advertising.html"> Sales,
                     Marketing, and Advertising</a></li>
               </ul>
             </div>
@@ -295,7 +280,6 @@
     <div class="footer-content position-relative">
       <div class="container">
         <div class="row">
-
           <div class="col-lg-4 col-md-6">
             <div class="footer-info">
               <h5>Contact Us</h5>
@@ -350,6 +334,39 @@
   </footer>
   <!-- End Footer -->
 
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Download Brochure</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="fullname" class="col-form-label">Your Name:</label>
+              <input type="text" class="form-control" id="fullname" name="fullname">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="col-form-label">Email Address</label>
+              <input type="text" class="form-control" id="email" name="email">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success" onclick="downloadPDF()">Download</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
@@ -366,9 +383,11 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/tabs.js"></script>
+  <!-- <script src="assets/js/tabs.js"></script> -->
+  <script src="assets/js/accordion.js"></script>
 
-
+  <!-- Download scripts-->
+  <script src="scripts/download.js"></script>
 </body>
 
 </html>
